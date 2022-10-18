@@ -1,5 +1,5 @@
 const rollWeather = async ({ cold, wind }) => {
-  console.log({ cold, wind })
+
   const rwind = await game.tables.getName("Wind").roll({ roll: new Roll(`1d6 + ${wind}`) });
   const snow = await game.tables.getName("Snow").roll();
   const roll =
